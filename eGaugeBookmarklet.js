@@ -20,7 +20,7 @@
 	Description: This JavaScript can be used as a bookmarklet in any major 
 	browser. To add it to Chrome, create a new bookmark and for the url add
 	"javascript:" and a minified copy of the below source. This bookmarklet
-	can be used on any eGuage web interface. This code will add a new graph
+	can be used on any eGauge web interface. This code will add a new graph
 	menu item to simplify setting just the year for the currently selected 
 	time period. Simply select the year and the graph will update to the 
 	same selected date and time, but for the new year.
