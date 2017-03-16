@@ -36,7 +36,7 @@ if(document.getElementById("bookmarklet") === null) {  // Make sure bookmarklet 
 	gm.style.height = h + h / 3 + "px";   // Add 1/3 more to the height to make room for new element
 	var d = document.createElement("DIV");   // Create new div
 	d.style.cssText = "white-space: nowrap;";  // Set the element style
-	d.innerHTML = "Set time-period for previous year";  // Add text to display
+	d.innerHTML = "Set start year for same time-period";  // Add text to display
 	d.className = "GadgetMenuItem";  // Add the same class as other menu items (for CSS styles)
 	d.id = "bookmarklet";  // Add arbitrary ID to check to see if menu item cannot be loaded multiple times
 	d.addEventListener("click", function(){  // add on click event listener with call back function
@@ -56,6 +56,3 @@ if(document.getElementById("bookmarklet") === null) {  // Make sure bookmarklet 
 	});
 	gm.appendChild(d);  // Add the new menu item to the graph menu
 }  // fin
-
-
-
