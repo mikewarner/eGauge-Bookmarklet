@@ -46,12 +46,12 @@ if(document.getElementById("bookmarklet") === null) {  // Make sure bookmarklet 
 
 		var sEl = document.getElementsByClassName('date_input')[2];  // Get the current start date input object
 		var eEl = document.getElementsByClassName('date_input')[3];  // Get the current end date input object
-		var sYear = eEl.value.slice(-4)  // extract the end year
-		var dateDiff = sYear - sEl.value.slice(-4);  // get the diff from end date to start date, for instances where period will span through a new year
+		var sYear = parseInt(eEl.value.slice(-4));  // extract the end year
+		var dateDiff = sYear - parseInt(sEl.value.slice(-4));  // get the diff from end date to start date, for instances where period will span through a new year
 
-		var sYear = prompt("Enter start year", sYear - 1);  // Lazy so just using a prompt to get user value, with the default of last year
+		var sYear = prompt("Enter start year", sYear - 1 - dateDiff);  // Lazy so just using a prompt to get user value, with the default of last year ... minus the diff
 		sEl.value = sEl.value.slice(0, -4) + sYear;  // set the start date in the "Set time-period to display in graph" menu
-		eEl.value = eEl.value.slice(0, -4) + (parseInt(sYear) + parseInt(dateDiff));  // set the end date in the "Set time-period to display in graph" menu with the added offset
+		eEl.value = eEl.value.slice(0, -4) + (parseInt(sYear) + dateDiff);  // set the end date in the "Set time-period to display in graph" menu with the added offset
 		document.getElementsByTagName('input')[11].click();  // click the set button on "Set time-period to display in graph" menu
 	});
 	gm.appendChild(d);  // Add the new menu item to the graph menu
