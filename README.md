@@ -3,9 +3,9 @@ JavaScript which is used to add functionality to any eGauge metering web interfa
 
 The following steps can be used to load this bookmarklet:
 1. Manually create a bookmark and name it your choosing
-2. For the URL field add the following: 'javascript:asdfasdf`
+2. For the URL field add the following: `javascript:asdfasdf`
 
-*For the paranoid:* Copy the JavaScript, minimize it, type `javascript:` and the minimized code
+**For the paranoid:** Copy the JavaScript, minimize it, then type `javascript:` and the minimized code for the URL of the bookmark
 
 
 
