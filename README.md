@@ -7,7 +7,11 @@ The following steps can be used to load this bookmarklet:
 
 **For the paranoid:** Copy the JavaScript, minimize it, then type `javascript:` and paste the minimized code for the URL of the bookmark.
 
-Note: I am statically using indexes to other elements, so if the web interface ever changes, those static references will need to be updated.
+Once loaded, you should have a new menu item in the graph menu
+
+![New menu item](https://s3-us-west-2.amazonaws.com/egauge-bookmarklet/new_menu_item.PNG)
+
+**Note:** I'm statically using indexes to other elements, so if the web interface ever changes, those static references will need to be updated.
 
 
 
